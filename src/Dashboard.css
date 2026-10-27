@@ -1,0 +1,192 @@
+/* ============================================================
+   Dashboard styles
+   ============================================================ */
+
+/* ---- Header ---- */
+.dashboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.25rem 0;
+  border-bottom: none;
+}
+
+.dashboard-header .d-flex.align-items-center {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
+
+.dashboard-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dashbadge {
+  display: inline-block;
+}
+
+.dashboard-header .text-light {
+  color: #ffffff;
+}
+
+.dashboard-header .text-light-50 {
+  color: #d7dbdc;
+}
+
+/* ---- Stat cards ---- */
+.dashboard-card.stat-card .stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dashboard-card.stat-card .stat-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-card.stat-accent-1 .stat-icon-wrap {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.dashboard-card.stat-accent-2 .stat-icon-wrap {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.dashboard-card.stat-accent-3 .stat-icon-wrap {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.dashboard-card.stat-card .stat-card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.dashboard-card.stat-card .stat-card-label {
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* ---- Card ---- */
+.dashboard-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card .card-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #f0f2f5;
+  background: #f8f9fa;
+}
+
+.dashboard-card .card-title {
+  margin: 0;
+  color: #343a40;
+}
+
+/* ---- Chart ---- */
+.chart-wrapper {
+  padding: 1.5rem;
+}
+
+/* ---- Table ---- */
+.dt-report {
+  margin: 0;
+}
+
+.dt-report thead th {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 2px solid #e9ecef;
+  font-weight: 600;
+  color: #495057;
+  background: #f8f9fa;
+}
+
+.dt-report tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f3f5;
+  color: #343a40;
+}
+
+.dt-report tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.status-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+/* ---- Quick tip card ---- */
+.stat-card-overlay .d-flex.align-items-center {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat-card-overlay .stat-label {
+  margin: 0;
+  color: #343a40;
+}
+
+.stat-card-overlay p {
+  margin: 0;
+  max-width: 320px;
+}
+
+.stat-icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .DashboardBody {
+    flex-direction: column !important;
+  }
+  .dashboard-header .d-flex.align-items-center {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .dashboard-header .text-light-50 {
+    color: #d7dbdc;
+  }
+}
