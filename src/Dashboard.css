@@ -4,14 +4,14 @@
 
 /* ---- Header ---- */
 .dashboard-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 1.25rem 0;
+  background: linear-gradient(135deg, #202123 0%, #1b5aa6 100%);
+  /* padding: 1.25rem 0; */
   border-bottom: none;
 }
 
 .dashboard-header .d-flex.align-items-center {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1rem 0;
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* padding: 1rem; */
 }
 
 .dashboard-logo {
@@ -28,7 +28,7 @@
   color: #ffffff;
   font-size: 1.75rem;
   font-weight: 700;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 .dashbadge {
@@ -44,42 +44,55 @@
 }
 
 /* ---- Stat cards ---- */
-.dashboard-card.stat-card .stat-card-top {
+
+.stat-card{
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.stat-card .stat-card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
 }
 
-.dashboard-card.stat-card .stat-icon-wrap {
+.stat-card .stat-icon-wrap {
   width: 56px;
   height: 56px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #468ce7;
 }
 
-.dashboard-card.stat-accent-1 .stat-icon-wrap {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+.stat-card.stat-accent-1 {
+  background: linear-gradient(135deg, #eeeeee, #7feec7);
 }
 
-.dashboard-card.stat-accent-2 .stat-icon-wrap {
+.stat-card.stat-accent-2 {
   background: linear-gradient(135deg, #f59e0b, #ef4444);
 }
 
-.dashboard-card.stat-accent-3 .stat-icon-wrap {
-  background: linear-gradient(135deg, #10b981, #14b8a6);
+.stat-card.stat-accent-3 {
+  background: linear-gradient(135deg, #107bb9, #c5c5c5);
 }
 
-.dashboard-card.stat-card .stat-card-value {
+.stat-card .stat-card-value {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 4px;
 }
 
-.dashboard-card.stat-card .stat-card-label {
+.stat-card .stat-card-label {
   font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.stat-card .stat-card-trend {
+  font-size: 2.5rem;
   margin-top: 4px;
   margin-bottom: 0;
 }
@@ -94,12 +107,13 @@
 .dashboard-card .card-header {
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid #f0f2f5;
-  background: #f8f9fa;
+  background: #1b5aa6;
 }
 
 .dashboard-card .card-title {
   margin: 0;
-  color: #343a40;
+  color: #ffffff;
+  /* color: #343a40; */
 }
 
 /* ---- Chart ---- */
@@ -110,6 +124,11 @@
 /* ---- Table ---- */
 .dt-report {
   margin: 0;
+  padding: 0.5rem;
+}
+
+.dt-report table{
+  width:100%;
 }
 
 .dt-report thead th {
@@ -118,7 +137,7 @@
   border-bottom: 2px solid #e9ecef;
   font-weight: 600;
   color: #495057;
-  background: #f8f9fa;
+  background: #cde6ff;
 }
 
 .dt-report tbody td {
