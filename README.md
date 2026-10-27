@@ -78,6 +78,7 @@ npm run preview
     ├── index.css           # Global styles (full-width/height)
     ├── Login.css           # Login screen styles
     ├── Dashboard.css       # Dashboard styles
+    ├── globals.d.ts        # Fixing issue of TypeScript not natively understanding CSS or non-JavaScript asset files
     └── components
         ├── Login.tsx       # Login form component
         └── Dashboard.tsx   # Dashboard component (cards, chart, table)

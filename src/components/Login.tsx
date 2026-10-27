@@ -50,14 +50,14 @@ export default function Login({ onLogin }: LoginProps) {
           tag={<span className="badge bg-primary-subtle text-primary fw-bold">Login</span>}
           children={
             <>
-              {/* <div
+              <div
                 className={
                   "alert d-flex align-items-center " +
-                  (error ? 'alert-danger' : 'alert-info')
+                  (error ? 'alert-danger' : 'invisible')
                 }
               >
                 {error}
-              </div> */}
+              </div>
 
               <form onSubmit={handleSubmit}>
                 {/* Email field */}
@@ -129,14 +129,12 @@ interface CardContainerProps {
   children?: React.ReactNode
 }
 
-function CardContainer({ title, subtitle, tag, children }: CardContainerProps) {
+function CardContainer({ title, children }: CardContainerProps) {
   return (
     <div className="col-sm-6 col-lg-4">
       <div className="login-card-content">
         <div className="login-card-header">
-          {/* <span className="login-card-tag">{tag}</span> */}
           <h2 className="login-card-title">{title}</h2>
-          {/* <p className="login-card-subtitle">{subtitle}</p> */}
         </div>
         <div className="login-card-body">{children}</div>
       </div>
